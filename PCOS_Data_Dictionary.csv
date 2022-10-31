@@ -1,0 +1,46 @@
+Variable,Data Type ,Description,Context,Reference,Relevancy to Analysis
+Sl. No,Integer,Row Index,Included with original data set. ,,Low 
+Patient File No.,Integer,Unique patient file identifier,Total of 1082 Patient File Numbers,,High
+PCOS (Y/N),Boolean ,True represents if the patient was diagnosed with PCOS. False represents the patient has not been diagnosed with PCOS.,"If the patient has not been diagnosed with PCOS (False), this does not mean that this patient could not be diagnosed with PCOS in the future. ",,High
+Age (yrs),Integer,Patient age,Research suggests that 35 and older women have a higher risk of pregnancy-related complications. ,,Medium
+Weight (Kg),Integer,Patient weight in kilograms ,,,Medium
+Height(Cm),Integer,Patient height in centimeters,,,Medium
+BMI,Integer,Body Mass Index of patient ,Calculated by Weight (Kg) / (Height (M) *2). A value of 30 and above indicates obsesity in adults.,,High
+Blood Group,Integer,Blood types represented as integers ,"A+  = 11, A- = 12, B+ = 13, O+ = 15, O- = 16, AB+ = 17, AB- = 18",,Medium
+Pulse rate(bpm) ,Integer,Heart beats per minute,"For adults (ages 18+), the expected resting heart rate range is 60 - 100 bpm.",Clevland Clinic,Low 
+RR (breaths/min),Integer ,Respiration rate measured in breaths per minute. ,"For adults (ages 18+), the expected respiratory rate is 12 to 20 breaths per minute. ",Cleveland Clinic,Low 
+Hb(g/dl),Integer,Hemoglobin measured in grams per deciliter. ,"Normal ranges for Males are 13.2 to 16.6 g/dl; For women, 11.6 to 15 g/dl. ",Mayo Clinic,Low 
+Cycle(R/I),Boolean ,Patient Cycle classified as Regular or Irregular,"In this dataset, it is not well defined what the integers mean so this feature will not be used.",Mayo Clinic,Low 
+Cycle length(days),Integer,Cycle length in days,Regular cycle lengths range from 21 to 35 days ,Mayo Clinic,High
+Pregnant(Y/N),Boolean ,True indicates the patient is pregnant. False indicates the patient is not pregnant.,Women who have PCOS can get pregnant. ,US Dept of Health and Human Services,High
+No. of abortions,Integer,Count of abortions,Some research suggests that patients with PCOS usually have a high abortion rate. ,National Library of Medicine,Medium
+  I   beta-HCG(mIU/mL),Integer,Human Chorionic Gonadotropin measured in milli-iternaitional units per milliliter. Case I is the first reading. ,HCG is a hormone produced during pregnancy. Non-pregnant women: less than 5 mIU/ml. Healthy men: less than 2 miU/mL. During pregnancy the HCG ranges rise rapidly. ,Mount Sinai,Medium
+II    beta-HCG(mIU/mL),Integer,"Human Chorionic Gonadotropin measured in milli-iternaitional units per milliliter. Case II is the first reading. If no Case II reading, then the Case I reading is taken.",Non-pregnant women: less than 5 mIU/ml. Healthy men: less than 2 miU/mL. During pregnancy the HCG ranges rise rapidly. ,Mount Sinai,Medium
+FSH(mIU/mL),Integer,Follicle-stimulating Hormone measured in milli-international units per milliliter.,"In women, FSH helps control the menstrual cycle and stimulates egg growth. Adult males have 1.5 to 12.4 mIU/mL. Adult women 4.7 to 21.5 mIU/mL. ",Mount Sinai,Medium
+LH(mIU/mL),Integer,Luteinizing Hormone measured in milli-international units per milliliter.,"LH will increase mid-cycle in women which causes the release of eggs. In women before menopuase, the normal range is 5 to 25 IU/L. In adult men (over 18 years of age), the normal range is 1.8 to 8.6 IU/L. ",Mount Sinai,Medium
+FSH/LH ,Integer,Follicle-stimulating Hormone divided by Luteinizing Hormone. ,"This particular ratio is used to be a predictor of ovarian reserve. If the ratio > 3.0, women have higher cancellation rates of IVF treatments. ",Sage Journals,Medium
+Hip(inch),Integer,Hips measured in inches. ,,,Medium
+Waist(inch),Integer,Measured in inches. ,,,Low 
+Waist:Hip Ratio,Integer,Waist measurement divided by hip measurement.,,,Low 
+TSH (mIU/L),Integer,Thyroid Stimulating Hormone measured in milli-international units per liter.,Thyroid disease can be a cause of infertility. Normal values are from 0.4 to 4.0 mIU/L for those with no symptoms. ,UCLA Health,Low 
+AMH(ng/mL),Integer,Anti-Mullerian Hormone measured in Nanograms per milliliter. ,"AMH tells you the number of remaining eggs you have. Normal levels vary depend on age. For women, the average range is between 1.0 to 3.0.",Cleveland Clinic,Medium
+PRL(ng/mL),Integer,Prolactin levels measured in Nanograms per milliliter. ,"Prolactin is a hormore release by the pituitary gland which regulates the body's balance of many hormones and used to supplement the diagnosis of infertility. Normal results in men are less than 20 ng/mL, non-pregnant women less than 25 ng/mL, and pregnant women range from 80 to 400 ng/mL. ",UCSF Health,Medium
+Vit D3 (ng/mL),Integer,Vitamin D3 measured in Nanograms per milliliter.,"Vitamin D screening is done for people who are at high risk for vitamin D deficiency, including people that are obese. The recommended range is between 20 and 40 ng/mL.",Mount Sinai,Medium
+PRG(ng/mL),Integer,Progesterone levels measured in Nanograms per milliliter. ,Progesterone is a hormone produced after ovulation which prepares the uterus for a fertilized egg to be implanted. Levels vary depending on when the test is done. ,UCSF,Medium
+RBS(mg/dl),Integer,Random blood sugar test measured in milligrams per deciliter. ,Blood sugar level less than 140 mg/dL is normal. If more than 200 mg/dL means that you have diabetes. ,Mayo Clinic,High
+Weight gain(Y/N),Boolean ,True indicates gained weight. False indicates no weight gained. ,Possible PCOS Symptom ,Cleveland Clinic,Medium
+hair growth(Y/N),Boolean ,True indicates hair growth. False indicates no hair growth. ,Possible PCOS Symptom ,Mayo Clinic,Medium
+Skin darkening (Y/N),Boolean ,True indicates skin darkening. False indicates no skin darkening. ,Possible PCOS Symptom ,Harvard Health,Medium
+Hair loss(Y/N),Boolean ,True indicates hair loss. False indicates no hair loss.,Possible PCOS Symptom ,Harvard Health,Medium
+Acne (Y/N) ,Boolean ,True indicates acne. False indicates no acne.,Possible PCOS Symptom ,Harvard Health,Medium
+Reg.Exercise(Y/N),Boolean ,True indicates patient exercises for more than 30 minutes 3 or more times a week. False indicates patient exercises less than 3 times a week. ,Exercise may help reduce PCOS symptoms. ,PubMed.gov,Medium
+BP _Systolic (mmHg),Integer,Pressure exerted when blood is ejected into arteries measured in millimeters of mercury. ,Should be below 120 mm/Hg,Mayo Clinic,Medium
+BP _Diastolic (mmHg),Integer,Pressure blood exerts within arteries between heartbeats measured in millimeters of mercury.,Should be below 80 mm/Hg,Mayo Clinic,Medium
+Follicle No. (L),Integer,Number of follicles found in the left ovary.,"Follicles are small fluid filled sacs in the ovaries that contain an unfertilized egg. Follicle counts vary based on age, as they decline with age, but 22-35 follicles are considered normal counts. ",Advanced Fertility Center of Chicago Antral Folicle Counts ,Low 
+Follicle No. (R),Integer,Number of follicles found in the right ovary.,"Follicles are small fluid filled sacs in the ovaries that contain an unfertilized egg. Follicle counts vary based on age, as they decline with age, but 22-35 follicles are considered normal counts. ",Advanced Fertility Center of Chicago Antral Folicle Counts ,Low 
+Avg. F size (L) (mm),Integer,Mean follicle size in the left ovary measured in millimeters. ,Follicles that are between 16 - 23 mm are considered to be mature follicles and will release an egg for ovulation. ,National Library of Medicine,Low 
+Avg. F size (R) (mm),Integer,Mean follicle size in the right ovary measured in millimeters. ,Follicles that are between 16 - 23 mm are considered to be mature follicles and will release an egg for ovulation. ,National Library of Medicine,Low 
+Endometrium (mm),Integer,The lining of the uterus measured in millimeters.  ,"In one study, median Endometrial thickness (ET) was 8.6 mm and was not related to their age or obstetric history. ",National Library of Medicine,Low 
+Infertility,Boolean ,True indicates patient has been diagnosed with infertility. False indicates patient has not been diagnosed with infertility. ,Unexplained infertility is when fertility testing has not found a cause to explain a person or couples infertility. ,Cleveland Clinic Unexplained Infertility,High
+Blood Pressure (str),String,BP_Systolic (mmHg) / BP_Diastolic (mmHg),"BP_Systolic and BP_Diastolic are provided as separate variables in the data set. However, it is common place to have both of these values together as a ratio for readings. Normal blood pressure is below or at 120/80. ",Mayo Clinic Blood Pressure,Low 
+Height (m),Integer,Height converted to meters for BMI calculation in the dataset. ,,,
