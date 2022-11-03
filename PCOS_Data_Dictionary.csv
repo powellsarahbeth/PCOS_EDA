@@ -11,7 +11,7 @@ Pulse rate(bpm) ,Integer,Heart beats per minute,"For adults (ages 18+), the expe
 RR (breaths/min),Integer ,Respiration rate measured in breaths per minute. ,"For adults (ages 18+), the expected respiratory rate is 12 to 20 breaths per minute. ",Cleveland Clinic,Low 
 Hb(g/dl),Integer,Hemoglobin measured in grams per deciliter. ,"Normal ranges for Males are 13.2 to 16.6 g/dl; For women, 11.6 to 15 g/dl. ",Mayo Clinic,Low 
 Cycle(R/I),Boolean ,Patient Cycle classified as Regular or Irregular,"In this dataset, it is not well defined what the integers mean so this feature will not be used.",Mayo Clinic,Low 
-Cycle length(days),Integer,Cycle length in days,Regular cycle lengths range from 21 to 35 days ,Mayo Clinic,High
+Cycle length(days),Integer,Menstral cycle length in days,"Regular cycle lengths range from 21 to 35 days. Please note that the data set only includes the menstral cycle timeframe, not the entire cycle.",Mayo Clinic,High
 Pregnant(Y/N),Boolean ,True indicates the patient is pregnant. False indicates the patient is not pregnant.,Women who have PCOS can get pregnant. ,US Dept. of Health and Human Services,High
 No. of abortions,Integer,Count of abortions,Some research suggests that patients with PCOS usually have a high abortion rate. ,National Library of Medicine,Medium
   I   beta-HCG(mIU/mL),Integer,Human Chorionic Gonadotropin measured in milli-iternaitional units per milliliter. Case I is the first reading. ,HCG is a hormone produced during pregnancy. Non-pregnant women: less than 5 mIU/ml. Healthy men: less than 2 miU/mL. During pregnancy the HCG ranges rise rapidly. ,Mount Sinai,Medium
